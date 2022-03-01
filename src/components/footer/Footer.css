@@ -1,0 +1,21 @@
+.fa {
+    padding: 7px 0;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border: 0;
+    color: white;    
+  }
+  .facebook {
+    background: #3B5998;
+  }
+  .youtube {
+    background: #bb0000;
+  }
+  .twitter {
+    background: #55ACEE;
+  }
