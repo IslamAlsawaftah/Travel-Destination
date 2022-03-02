@@ -1,14 +1,20 @@
 import "./Tours.css"
+import React from 'react'
+import Tour from '../tours/tour/Tour.js';
 const Tours = ({ data }) => {
     return (
-        <div className="parent-div" >
+        <div className="parent-div">
             {
-                data.map((element, index) => {
+                data.map((ele => {
                     return (
-                        <div key={index} className="child-div"><h3>{element.name}</h3>
-                            <img src={element.image} alt="" /></div>
+                        <>
+                            <div className="child-div">
+                                <Tour data={ele} />
+                            </div>
+                        </>
                     )
                 })
+                )
             }
         </div>
     )
