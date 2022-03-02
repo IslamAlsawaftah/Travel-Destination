@@ -1,9 +1,12 @@
+import React from 'react'
+import { Link } from "react-router-dom"
+
 function Header() {
     return (
         <header>
             <nav>
-                <h1 href="#">Home</h1>
-                <h1 href="#">About</h1>
+                {/* use link instead of a attribute */}
+                <Link to="/">Home</Link>
             </nav>
         </header>
     )
