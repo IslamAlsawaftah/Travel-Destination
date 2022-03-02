@@ -1,13 +1,12 @@
 import Header from "../header/Header";
 import Tours from "../tours/Tours";
-import data from "../../data/data.json"
 import Footer from "../footer/Footer";
 
-function home() {
+function home({ data }) {
     return (
         <>
             <Header />
-            <Tours datas={data} />
+            <Tours data={data} />
             <Footer />
         </>
     )
