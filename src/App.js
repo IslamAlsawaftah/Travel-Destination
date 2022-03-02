@@ -1,10 +1,10 @@
 import Home from "./components/home/Home";
+import data from "./data/data.json"
 
 function App() {
-  // console.log(data)
   return (
     <>
-      <Home />
+      <Home data={data} />
     </>
   )
 }

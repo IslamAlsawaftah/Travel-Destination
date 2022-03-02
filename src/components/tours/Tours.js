@@ -1,16 +1,16 @@
 import "./Tours.css"
-const Tours = (props) => {
+const Tours = ({ data }) => {
     return (
-        <div className="parent-div">
+        <div className="parent-div" >
             {
-                props.datas.map(element => {
+                data.map((element, index) => {
                     return (
-                        <div className="child-div"><h3>{element.name}</h3>
+                        <div key={index} className="child-div"><h3>{element.name}</h3>
                             <img src={element.image} alt="" /></div>
                     )
                 })
             }
-        </div >
+        </div>
     )
 };
 export default Tours;
